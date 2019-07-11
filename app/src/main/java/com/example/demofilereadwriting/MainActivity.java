@@ -58,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Code for file writing
+
+                // EXTERNAL FILE
                 try {
                     folderLocation = Environment.getExternalStorageDirectory().getAbsolutePath() + "/Folder";
                     File targetFile_I = new File(folderLocation, "data.txt");
@@ -78,6 +80,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Code for file reading
+
+                // EXTERNAL FILE
                 if (checkPermission()) {
                     folderLocation = Environment.getExternalStorageDirectory().getAbsolutePath() + "/Folder";
                     File targetFile = new File(folderLocation, "data.txt");
